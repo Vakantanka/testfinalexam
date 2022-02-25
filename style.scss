@@ -1,31 +1,111 @@
-$darkPrimaryColor: #1976D2;
-$lightPrimaryColor: #BBDEFB;
-$primaryColor: #2196F3;
-$iconColor: #FFFFFF;
-$accentColor: #03A9F4;
-$primaryTextColor: #212121;
-$secondaryTextColor: #757575;
-$dividerColor: #BDBDBD;
+$primaryColor: #ffeedf;
+$secondaryColor: #145434;
 
 body {
-    font-family: 'Raleway', sans-serif;
-    color: $primaryTextColor;
+    font-family: 'Space Grotesk', sans-serif;
+    color: $primaryColor;
+    background-color: $primaryColor;
 }
 
-#root {
+header {
+    position: sticky;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-
-    // width: 100vw;
-    // height: 100vh;
+    width: 100%;
+    height: 60px;
+    color: $secondaryColor;
+    border-bottom: 1px solid $secondaryColor;
+    h1, button span.menuicon {
+        font-size: 36px;
+        margin: 12px;
+    }
+    margin-bottom: 60px;
 }
 
-h1 {
-    color: $darkPrimaryColor;
-    font-size: 36px;
-    font-weight: 900;
-    // transform: translate(0, -50%);
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .container {
+        max-width: 920px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        .card {
+            position: relative;
+            background-color: $secondaryColor;
+            color: $primaryColor;
+            width: 400px;
+            margin: 30px;
+            padding: 26px 36px 36px 36px;
+            
+            h2 {
+                font-size: 36px;
+                font-weight: 400;
+                border-bottom: 1px solid;
+                padding-bottom: 36px;
+            }
+            
+            .index {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                top: -20px;
+                left: -20px;
+                font-size: 24px;
+                border: 1px solid $secondaryColor;
+                background-color: $primaryColor;
+                color: $secondaryColor;
+                border-radius: 50%;
+            }
+
+            .sub {
+                font-size: 18px;
+                font-weight: 400;
+                margin-top: 9px;
+            }
+
+            .text {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            button {
+                position: absolute;
+                bottom: -14px;
+                right: -14px;
+                width: 200px;
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: $primaryColor;
+                color: $secondaryColor;
+                border: 2px solid $secondaryColor;
+
+                .buttonText {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .arrow {
+                    position: absolute;
+                    right: 14px;
+                    font-size: 36px;
+                }
+            }
+
+            button:hover {
+                background-color: $secondaryColor;
+                color: $primaryColor;
+                border-color: $primaryColor;
+            }
+        }
+    }
 }
-
-

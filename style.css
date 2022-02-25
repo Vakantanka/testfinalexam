@@ -1,9 +1,69 @@
 body {
-  font-family: 'Raleway', sans-serif;
-  color: #212121;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #ffeedf;
+  background-color: #ffeedf;
 }
 
-#root {
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  color: #145434;
+  border-bottom: 1px solid #145434;
+  margin-bottom: 60px;
+}
+
+header h1, header button span.menuicon {
+  font-size: 36px;
+  margin: 12px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main .container {
+  max-width: 920px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .container .card {
+  position: relative;
+  background-color: #145434;
+  color: #ffeedf;
+  width: 400px;
+  margin: 30px;
+  padding: 26px 36px 36px 36px;
+}
+
+main .container .card h2 {
+  font-size: 36px;
+  font-weight: 400;
+  border-bottom: 1px solid;
+  padding-bottom: 36px;
+}
+
+main .container .card .index {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,11 +73,66 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  left: -20px;
+  font-size: 24px;
+  border: 1px solid #145434;
+  background-color: #ffeedf;
+  color: #145434;
+  border-radius: 50%;
 }
 
-h1 {
-  color: #1976D2;
+main .container .card .sub {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 9px;
+}
+
+main .container .card .text {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+main .container .card button {
+  position: absolute;
+  bottom: -14px;
+  right: -14px;
+  width: 200px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffeedf;
+  color: #145434;
+  border: 2px solid #145434;
+}
+
+main .container .card button .buttonText {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+main .container .card button .arrow {
+  position: absolute;
+  right: 14px;
   font-size: 36px;
-  font-weight: 900;
+}
+
+main .container .card button:hover {
+  background-color: #145434;
+  color: #ffeedf;
+  border-color: #ffeedf;
 }
 /*# sourceMappingURL=style.css.map */
